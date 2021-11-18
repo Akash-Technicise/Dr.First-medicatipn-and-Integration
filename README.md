@@ -1,2 +1,2 @@
-# Dr.First-medicatipn-and-Integration
+# Dr.First-medication-and-Integration
 My First Project.
