@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "e19bf626-f372-4910-a139-a7e92ac69983",
+		"name": "Registration Rcopia",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Registration of Rcopia",
+			"item": [
+				{
+					"name": "Register practice",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "xml",
+									"value": "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>\n\t\t<RegistrationApiRequest xmlns='urn:drfirst.com:registrationapi:v1_0'>\n\t\t\t<RegistrationApiRequestHeader> \n\t\t\t\t<ApiVersion>1.0</ApiVersion>\n\t\t\t\t<RegistrationVendorUserName>rvrapimindli3739</RegistrationVendorUserName>\n\t\t\t\t<RegistrationVendorPassword>Purple4Sodium5</RegistrationVendorPassword>\n\t\t\t\t<ClientApplication>\n\t\t\t\t\t<ApplicationName>RAPI</ApplicationName>\n\t\t\t\t\t<ApplicationVersion>6.0</ApplicationVersion>\n\t\t\t\t</ClientApplication>\n\t\t\t</RegistrationApiRequestHeader>\n\t\t\t<RegistrationApiRequestBody>\n\t\t\t\t<WsAddPracticeRequest>\n\t\t\t\t\t<Practice>\n\t\t\t\t\t\t<ExternalID>Akas1640692615461</ExternalID>\n\t\t\t\t\t\t<PracticeDetails>\n\t\t\t\t\t\t\t<PracticeName>Akashclinic</PracticeName>\n\t\t\t\t\t\t\t<ContactFirstName>user</ContactFirstName>\n\t\t\t\t\t\t\t<ContactLastName>user</ContactLastName>\n\t\t\t\t\t\t\t<ContactEmail>user@rcopia.com</ContactEmail>\n\t\t\t\t\t\t\t<OfficeName>Akashclinic</OfficeName>\n\t\t\t\t\t\t\t<ApplicationName>EMR</ApplicationName>\n\t\t\t\t\t\t\t<ContactDetails>\n\t\t\t\t\t\t\t\t<AddressDetails>\n\t\t\t\t\t\t\t\t\t<Address1>9420 Key West Ave</Address1>\n\t\t\t\t\t\t\t\t\t<City>Rockville</City>\n\t\t\t\t\t\t\t\t\t<State>MD</State>\n\t\t\t\t\t\t\t\t\t<ZipCode>20850</ZipCode>\n\t\t\t\t\t\t\t\t</AddressDetails>\n\t\t\t\t\t\t\t\t<PhoneDetails>\n\t\t\t\t\t\t\t\t\t<Phone>8882719898</Phone>\n\t\t\t\t\t\t\t\t</PhoneDetails>\n\t\t\t\t\t\t\t\t<Fax>3013450000</Fax>\n\t\t\t\t\t\t\t</ContactDetails>\n\t\t\t\t\t\t</PracticeDetails>\n\t\t\t\t\t</Practice>\n\t\t\t\t</WsAddPracticeRequest>\n\t\t\t</RegistrationApiRequestBody>\n\t\t</RegistrationApiRequest>\n\t\t\t\t",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://register.staging.drfirst.com/ws/wsAddPractice",
+							"protocol": "https",
+							"host": [
+								"register",
+								"staging",
+								"drfirst",
+								"com"
+							],
+							"path": [
+								"ws",
+								"wsAddPractice"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register Location",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "Register Vendor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "Register patient demographics",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Register user/practitioner",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
